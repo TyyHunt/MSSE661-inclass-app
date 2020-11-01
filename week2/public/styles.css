@@ -3,14 +3,32 @@ header {
  width: 100%;
 }
 
+nav {
+ display: block;
+}
+
+nav ul {
+ float: left;
+ margin: auto;
+}
+
+li {
+ float: left;
+ padding: 5px;
+}
+
+ul li {
+ list-style: none;
+}
+
 .main {
  min-height: 100%;
  width: 100%;
 }
 
 footer {
- height: 25px;
+ height: 75px;
  width: 100%;
- position: fixed;
- bottom: 5%;
+ position: absolute;
+ bottom: 0;
 }
