@@ -21,7 +21,7 @@ class Person {
  }
 }
 
-let me = new Person('Tyler', 28)
+let me = new Person('Tyler', 28);
 console.log(me.getName());
 
 
