@@ -1,25 +1,35 @@
-var object = {
- name: "Tyler",
- age: 28
-}
-
-class Person {
- name;
- age;
-
- constructor(name, age) {
-  this.name = name;
-  this.age = age;
- }
-
- getLegal() {
-  return this.age >= 21;
- };
-
- getName() {
-  return `Hello, my name is ${this.name}`;
- }
-}
+  
+const doLogin = function(e) {
+    e.preventDefault();
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+  
+    login({
+      username: username,
+      password: password
+    }).then(function(res) {
+      window.location.href = 'home.html';
+    });
+  };
+  
+  const doRegister = function(e) {
+    e.preventDefault();
+    const username = document.getElementById('username').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+  
+    register({
+      username: username,
+      email: email,
+      password: password
+    }).then(function(res) {
+      window.location.href = 'home.html';
+    });
+  };
+  
+  const doLogout = function(e) {
+    e.preventDefault();
+  };
 
 let me = new Person('Tyler', 28);
 console.log(me.getName());
